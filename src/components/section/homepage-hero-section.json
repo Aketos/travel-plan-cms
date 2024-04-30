@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_section_homepage_hero_sections",
+  "info": {
+    "displayName": "Homepage Hero Section",
+    "description": "",
+    "icon": "crop"
+  },
+  "options": {},
+  "attributes": {
+    "introduction": {
+      "type": "text"
+    },
+    "descriptor": {
+      "displayName": "Descriptor",
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.descriptor"
+    },
+    "background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "video": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

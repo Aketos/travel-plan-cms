@@ -1,0 +1,34 @@
+{
+  "name": "scc-corporate-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.12.0",
+    "@strapi/plugin-users-permissions": "4.12.0",
+    "@strapi/provider-email-sendgrid": "^4.12.4",
+    "@strapi/provider-upload-cloudinary": "^4.21.0",
+    "@strapi/strapi": "4.12.0",
+    "better-sqlite3": "8.0.1",
+    "pg": "^8.11.3",
+    "sharp": "^0.33.2",
+    "strapi-plugin-populate-deep": "^3.0.0"
+  },
+  "author": {
+    "name": "Mathieu Lagarde"
+  },
+  "strapi": {
+    "uuid": "f1cd7595-1245-407f-b69c-a005eac17850"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_blocks_descriptors",
+  "info": {
+    "displayName": "Descriptor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    }
+  }
+}

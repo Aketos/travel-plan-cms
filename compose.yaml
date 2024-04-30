@@ -1,0 +1,39 @@
+version: "3.7"
+
+services:
+  travel-cms:
+    container_name: travel-cms
+    networks:
+      - travel-plan
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      EMAIL_SENDER: ${EMAIL_SENDER}
+      DATABASE_FILENAME: ${DATABASE_FILENAME:-.tmp/data.db}
+      DATABASE_CLIENT: ${DATABASE_CLIENT:-sqlite}
+    ports:
+      - "1337:1337"
+    volumes:
+      - .:/var/app
+      - travel-plan-cms-db:/var/app/${DATABASE_FOLDER:-.tmp}
+      - travel-plan-cms-uploads:/var/app/public/uploads
+#    entrypoint: ['strapi', 'develop']
+    entrypoint: ["tail", "-f", "/dev/null"]
+  scc_travel_database:
+    build: ./docker/postgresql
+    container_name: travel-db
+    volumes:
+      - ../data/travel/psql:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=docker
+    ports:
+      - "5432:5432"
+    networks:
+      - travel-plan
+volumes:
+  travel-plan-cms-db:
+  travel-plan-cms-uploads:
+networks:
+  travel-plan:
+    external: true

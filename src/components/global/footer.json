@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_global_footers",
+  "info": {
+    "displayName": "Footer",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "legals": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.link"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.link"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

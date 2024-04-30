@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_blocks_contents",
+  "info": {
+    "displayName": "Content",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "linkLabel": {
+      "type": "string"
+    }
+  }
+}

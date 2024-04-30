@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_blocks_group_links",
+  "info": {
+    "displayName": "Group Link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "group": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

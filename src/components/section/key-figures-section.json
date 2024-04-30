@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_section_key_figures_sections",
+  "info": {
+    "displayName": "Key Figures Section",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "keys": {
+      "displayName": "Key Figure",
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.key-figure"
+    }
+  }
+}

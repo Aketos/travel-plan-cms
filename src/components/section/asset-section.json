@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_section_asset_sections",
+  "info": {
+    "displayName": "Asset Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "assets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::asset.asset"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_global_navigations",
+  "info": {
+    "displayName": "Navigation",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.link"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "newsletter": {
+      "type": "string"
+    },
+    "groupLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.group-link"
+    }
+  }
+}

@@ -20,7 +20,7 @@ services:
       - travel-plan-cms-uploads:/var/app/public/uploads
 #    entrypoint: ['strapi', 'develop']
     entrypoint: ["tail", "-f", "/dev/null"]
-  scc_travel_database:
+  travel_database:
     build: ./docker/postgresql
     container_name: travel-db
     volumes:

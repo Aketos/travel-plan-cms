@@ -8,4 +8,4 @@ down:
 	docker compose down
 
 run:
-	docker exec -it corporate-cms sh
+	docker exec -it travel-cms sh
